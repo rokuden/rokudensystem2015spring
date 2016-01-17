@@ -1,0 +1,30 @@
+body{
+    background-image:url(./b102.jpg);
+}
+h3{
+    color:black;
+    background-color:pink;
+}
+marquee{
+    color:red;
+    background-color:black;
+}
+
+a{
+    color:blue
+}
+div{
+    color:blue;
+    background-color:yellow;
+    text-align:center;
+}
+.imgcntr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align:center;
+
+}
+
