@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"></head>
+<title>
+    散らかり度
+</title>
+<script laguage="JavaScript"><!--
+    function changeImg()
+    {
+        　　　　location.reload();
+    }
+// --></script>
+
+
+<link type="text/css" href="gui.css" rel="stylesheet"/>
+    <body>
+        <a name="TOP"></a>
+        <center><img src="./title.gif" width="500" height="" alt="タイトル" border="0" align="center" hspace="10" vspace="10"><hr>
+            <marquee scrollamount="6" truespeed="" colspan="2" width="300" height="23" align="center">webカメラを使ってリアルタイムに監視しています。①は散らかり度の閾値（床面積に対して、置かれた物の上面の面積の合計の割合が24%）を最大値としたグラフ、②は物が置かれたところを赤く塗りつぶした画像、③がは現在の元画像とシステムを初期化した時の画像です。ページを更新する事によりグラフと画像も更新されます。物を置かれたところの床面積に対する割合が『散らかり度』です。このシステムでは「散らかり度」が閾値(24%)を超えると通知メールが送信されます。</marquee>
+                       <div>
+                           <h1><img src="./g-p01.gif" alt="アイコン"  /alt ="アイコン" height="25px"></a>現在の散らかり度は<object type="text/html" data="/Users/Rokuden/Desktop/results/test.html" height="55px" width="75px">
+                    </object>%です</h1>
+            </div>
+            </center>
+            <hr>
+            <h3>①散らかり度グラフ(散らかり度が閾値近づくに連れてグラフが赤くなっていきます)</h3>
+            <script type="text/javascript" src="/Users/Rokuden/Desktop/results/test.js">
+                </script>
+            <script>
+                for(i = 0; i < 24; i+=2){
+                    if(i < t ){document.write("<img src='./box.gif'>");
+                    }else{document.write("<img src='./whitebox.gif'>");
+                    }
+                }
+            </script>
+            <h3>②処理済み画像(物が置かれたところは赤くなります)</h3>
+            <br>
+            <img src="./gi-03.gif" alt="アイコン"></a>
+                        <center>
+                            <a target="_blank" href="/Users/Rokuden/Desktop/results/result.png">
+                                <img src="/Users/Rokuden/Desktop/results/result.png" alt="画像3" width="720" height="" /alt ="画像3" class = "imgcntr"></a>
+                        </center><br>
+            <h3>③現在の元画像と初期状態の画像</h3>
+            <img src="./gi-03.gif" alt="アイコン"></a><br>
+                <center><a target="_blank" href="/Users/Rokuden/Desktop/results/current.png"><img src="/Users/Rokuden/Desktop/results/current.png" alt="画像2" width="400" height="" /alt ="画像2"></a><a target="_blank" href="/Users/Rokuden/Desktop/results/pre.png"><img src="/Users/Rokuden/Desktop/results/pre.png" alt="画像1" width="400" height="" /alt ="画像1"></a></center><br>
+        <hr>
+        <a href="#TOP">トップへ戻る</a>
+    </body>
+</html>
